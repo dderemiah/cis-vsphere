@@ -30,12 +30,12 @@ function Connect-VCServer {
 Connect-VCServer
 
 # Run the CIS Benchmark checks and store the results in a variable
-# # 1.Install
+# 1.Install
 Write-Host "`n* These controls contain recommendations for settings related to 1.Install" -ForegroundColor Blue
 Ensure-ESXiIsProperlyPatched
 Ensure-VIBAcceptanceLevelIsConfiguredProperly
 Ensure-UnauthorizedModulesNotLoaded
-Ensure-DefaultSaultIsConfiguredProperly
+Ensure-DefaultSaltIsConfiguredProperly
 
 # 2.Communication 
 Write-Host "`n* These controls contain recommendations for settings related to 2.Communication" -ForegroundColor Blue
@@ -73,8 +73,8 @@ Ensure-ESXiShellIsDisabled
 Ensure-SSHIsDisabled
 Ensure-CIMAccessIsLimited
 Ensure-NormalLockDownIsEnabled
-Ensure-StrickLockdownIsEnabled
-Ensure-SSHAuthorisedKeysFileIsEmpty
+Ensure-StrictLockdownIsEnabled
+#Ensure-SSHAuthorisedKeysFileIsEmpty  #(TSS EXCLUDED)
 Ensure-IdleESXiShellAndSSHTimeout
 Ensure-ShellServicesTimeoutIsProperlyConfigured
 Ensure-DCUIHasTrustedUsersForLockDownMode

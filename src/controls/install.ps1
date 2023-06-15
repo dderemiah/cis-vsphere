@@ -164,7 +164,7 @@ function Ensure-UnauthorizedModulesNotLoaded {
 }
 
 
-function Ensure-DefaultSaultIsConfiguredProperly {
+function Ensure-DefaultSaltIsConfiguredProperly {
     # CIS 1.4 Ensure the default value of individual salt per vm is configured
     Write-Host "`n* CIS control 1.4 Ensure the default value of individual salt per vm is configured" -ForegroundColor Blue
     
