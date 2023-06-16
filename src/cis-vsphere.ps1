@@ -46,7 +46,7 @@ Ensure-MOBIsDisabled
 Ensure-SNMPIsConfiguredProperly
 Ensure-dvfilterIsDisabled
 Ensure-DefaultExpiredOrRevokedCertificateIsNotUsed
-Ensure-vSphereAuthenticationProxyIsUsedWithAD
+#Ensure-vSphereAuthenticationProxyIsUsedWithAD  #(TSS EXEMPT)
 #Ensure-VDSHealthCheckIsDisabled  #(TSS EXCLUDED)
 
 # 3.Logging
@@ -57,22 +57,22 @@ Ensure-RemoteLoggingIsConfigured
 
 # 4.Access
 Write-Host "`n* These controls contain recommendations for settings related to 4.Access" -ForegroundColor Blue
-Ensure-NonRootExistsForLocalAdmin
+#Ensure-NonRootExistsForLocalAdmin  #(TSS EXEMPT)
 Ensure-PasswordsAreRequiredToBeComplex
 Ensure-LoginAttemptsIsSetTo5
 Ensure-AccountLockoutIsSetTo15Minutes
 Ensure-Previous5PasswordsAreProhibited
-Ensure-ADIsUsedForAuthentication
-Ensure-OnlyAuthorizedUsersBelongToEsxAdminsGroup
-Ensure-ExceptionUsersIsConfiguredManually
+#Ensure-ADIsUsedForAuthentication #(TSS EXEMPT)
+#Ensure-OnlyAuthorizedUsersBelongToEsxAdminsGroup #(TSS EXEMPT)
+#Ensure-ExceptionUsersIsConfiguredManually #(TSS EXEMPT)
 
 # 5.Console
 Write-Host "`n* These controls contain recommendations for settings related to 5.Console" -ForegroundColor Blue
 Ensure-DCUITimeOutIs600
 Ensure-ESXiShellIsDisabled
-Ensure-SSHIsDisabled
-Ensure-CIMAccessIsLimited
-Ensure-NormalLockDownIsEnabled
+#Ensure-SSHIsDisabled  #(OK W/2.2)
+#Ensure-CIMAccessIsLimited  #(TSS REC BUT NO SER REQ)
+#Ensure-NormalLockDownIsEnabled  #(TSS REC BUT NO SER REQ)
 #Ensure-StrictLockdownIsEnabled  #(TSS EXCLUDED)
 #Ensure-SSHAuthorisedKeysFileIsEmpty  #(TSS EXCLUDED)
 Ensure-IdleESXiShellAndSSHTimeout
