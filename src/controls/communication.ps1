@@ -74,15 +74,20 @@ function Ensure-ESXiHostFirewallIsProperlyConfigured {
         # Check if the firewall rules are configured properly
         
         Foreach ($Rule in $FirewallExceptions) {
-            if ($Rule.Enabled -eq $true -and ($Rule.ExtensionData.AllowedHosts.AllIP) -eq $true) {
-                Write-Host "- $($VMHost.Name): Fail" -ForegroundColor Red
-                Write-Host "  Rule $($Rule.Name) is enabled and allows all hosts" -ForegroundColor Red
-                $failed++
-            }
-            else {
-                Write-Host "- $($VMHost.Name): Pass" -ForegroundColor Green
-                Write-Host "  Rule $($Rule.Name) is disabled or allows specific hosts" -ForegroundColor Green
-                $passed++
+            if ($Rule.Name -eq "SSH Server" -or $Rule.Name -eq "vSphere Web Client" -or $Rule.Name -eq "vSphere Web Access")
+            {
+                if ($Rule.Enabled -eq $true -and ($Rule.ExtensionData.AllowedHosts.AllIP) -eq $true)
+                {
+                    Write-Host "- $( $VMHost.Name ): Fail" -ForegroundColor Red
+                    Write-Host "  Rule $( $Rule.Name ) is enabled and allows all hosts" -ForegroundColor Red
+                    $failed++
+                }
+                else
+                {
+                    Write-Host "- $( $VMHost.Name ): Pass" -ForegroundColor Green
+                    Write-Host "  Rule $( $Rule.Name ) is disabled or allows specific hosts" -ForegroundColor Green
+                    $passed++
+                }
             }
         }
 
@@ -410,5 +415,3 @@ function Ensure-VDSHealthCheckIsDisabled {
         return 1
     }
 }
-
-
