@@ -51,7 +51,7 @@ Ensure-DefaultExpiredOrRevokedCertificateIsNotUsed
 
 # 3.Logging
 Write-Host "`n* These controls contain recommendations for settings related to 3.Logging" -ForegroundColor Blue
-Ensure-CentralizedESXiHostDumps
+#Ensure-CentralizedESXiHostDumps  #(TSS REC BUT NO SER REQ)
 Ensure-PersistentLoggingIsConfigured
 Ensure-RemoteLoggingIsConfigured
 
@@ -89,7 +89,7 @@ Ensure-SANResourcesAreSegregatedProperly
 # 7.Network 
 Write-Host "`n* These controls contain recommendations for settings related to 7.Network" -ForegroundColor Blue
 Ensure-vSwitchForgedTransmitsIsReject
-Ensure-vSwitchMACAdressChangeIsReject
+#Ensure-vSwitchMACAdressChangeIsReject  #(TSS REC BUT NO SER REQ)
 Ensure-vSwitchPromiscuousModeIsReject
 Ensure-PortGroupsNotNativeVLAN
 #Ensure-PortGroupsNotUpstreamPhysicalSwitches  #(TSS EXCLUDED)
@@ -108,7 +108,7 @@ Ensure-UnnecessarySerialPortsAreDisabled
 Ensure-UnnecessaryUsbDevicesAreDisconnected
 Ensure-UnauthorizedModificationOrDisconnectionOfDevicesIsDisabled
 #Ensure-UnauthorizedConnectionOfDevicesIsDisabled  #(TSS EXCLUDED)
-Ensure-PciPcieDevicePassthroughIsDisabled
+# Ensure-PciPcieDevicePassthroughIsDisabled  #(TSS REC BUT NO SER REQ)
 Ensure-UnnecessaryFunctionsInsideVMsAreDisabled
 Ensure-UseOfTheVMConsoleIsLimited
 Ensure-SecureProtocolsAreUsedForVirtualSerialPortAccess
