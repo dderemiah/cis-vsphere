@@ -110,10 +110,10 @@ function Ensure-RemoteLoggingIsConfigured {
     $unknown = 0
 
     # Get the ESXi hosts
-    $VMHosts = Get-VMHost | Select Name, @{N="Syslog.global.logHost";E={$_ | Get-AdvancedSetting Syslog.global.logHost}}
+    $VMHosts = Get-VMHost | Select Name, @{N="SyslogLogHost";E={$_ | Get-AdvancedSetting Syslog.global.logHost }}
 
     Foreach ($VMHost in $VMHosts) {
-        if ($VMHost.Syslog.global.logHost -ne $null) {
+        if ($VMHost.SyslogLogHost -ne $null) {
             Write-Host "- Check Passed" -ForegroundColor Green
             Write-Host "  Remote logging is configured for $($VMHost.Name)" -ForegroundColor Green
             $passed++
@@ -144,4 +144,3 @@ function Ensure-RemoteLoggingIsConfigured {
 
 
 }
-
