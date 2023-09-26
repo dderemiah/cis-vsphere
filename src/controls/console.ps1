@@ -235,7 +235,7 @@ function Ensure-NormalLockDownIsEnabled {
 }
 
 
-function Ensure-StrickLockdownIsEnabled {
+function Ensure-StrictLockdownIsEnabled {
     # CIS 5.6 (L2) Ensure Strict Lockdown mode is enabled
     Write-Host "`n* CIS control 5.6 (L2) Ensure Strict Lockdown mode is enabled" -ForegroundColor Blue
     
@@ -488,4 +488,3 @@ function Ensure-ContentsOfExposedConfigurationsNotModified {
     }
 
 }
-

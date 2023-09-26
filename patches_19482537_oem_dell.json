@@ -5,15 +5,15 @@
     },
     {
         "Name":  "bmcal",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "bnxtnet",
-        "Version":  "222.0.118.0-1OEM.700.1.0.15843807"
+        "Version":  "220.0.9.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "bnxtroce",
-        "Version":  "222.0.118.0-1OEM.700.1.0.15843807"
+        "Version":  "220.0.2.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "brcmfcoe",
@@ -21,11 +21,11 @@
     },
     {
         "Name":  "cpu-microcode",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "crx",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "elx-esx-libelxima.so",
@@ -41,71 +41,71 @@
     },
     {
         "Name":  "esx-base",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "esx-dvfilter-generic-fastpath",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "esxio-combiner",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "esx-ui",
-        "Version":  "1.43.8-19798623"
+        "Version":  "1.36.0-18403931"
     },
     {
         "Name":  "esx-update",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "esx-xserver",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "gc",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "i40en",
-        "Version":  "2.2.7.0-1OEM.700.1.0.15843807"
+        "Version":  "2.1.5.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "iavmd",
-        "Version":  "2.7.2.1001-1OEM.700.1.0.15843807"
+        "Version":  "2.7.0.1157-2vmw.703.0.20.19193900"
     },
     {
         "Name":  "icen",
-        "Version":  "1.8.4.0-1OEM.700.1.0.15843807"
+        "Version":  "1.6.2.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "igbn",
-        "Version":  "1.9.1.0-1OEM.700.1.0.15843807"
+        "Version":  "1.7.4.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "ionic-en",
-        "Version":  "18.0.0-1OEM.700.1.0.15843807"
+        "Version":  "16.0.0-16vmw.703.0.20.19193900"
     },
     {
         "Name":  "irdman",
-        "Version":  "1.3.6.0-1OEM.700.1.0.15843807"
+        "Version":  "1.3.1.20-1vmw.703.0.20.19193900"
     },
     {
         "Name":  "iser",
-        "Version":  "1.1.0.1-1vmw.703.0.50.20036589"
+        "Version":  "1.1.0.1-1vmw.703.0.20.19193900"
     },
     {
         "Name":  "ixgben",
-        "Version":  "1.12.3.0-1OEM.700.1.0.15843807"
+        "Version":  "1.11.4.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "loadesx",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "lpfc",
-        "Version":  "14.0.543.0-1OEM.700.1.0.15843807"
+        "Version":  "14.0.169.25-5vmw.703.0.35.19482537"
     },
     {
         "Name":  "lpnic",
@@ -113,7 +113,7 @@
     },
     {
         "Name":  "lsi-mr3",
-        "Version":  "7.720.04.00-1OEM.700.1.0.15843807"
+        "Version":  "7.718.02.00-1vmw.703.0.20.19193900"
     },
     {
         "Name":  "lsi-msgpt2",
@@ -125,7 +125,7 @@
     },
     {
         "Name":  "lsi-msgpt35",
-        "Version":  "21.00.00.00-1OEM.700.1.0.15843807"
+        "Version":  "19.00.03.00-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "lsuv2-hpv2-hpsa-plugin",
@@ -137,7 +137,7 @@
     },
     {
         "Name":  "lsuv2-lsiv2-drivers-plugin",
-        "Version":  "1.0.0-12vmw.703.0.50.20036589"
+        "Version":  "1.0.0-10vmw.703.0.35.19482537"
     },
     {
         "Name":  "lsuv2-nvme-pcie-plugin",
@@ -165,19 +165,19 @@
     },
     {
         "Name":  "native-misc-drivers",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "ne1000",
-        "Version":  "0.9.0-1vmw.703.0.50.20036589"
+        "Version":  "0.8.4-11vmw.703.0.20.19193900"
     },
     {
         "Name":  "nenic",
-        "Version":  "1.0.42.0-1OEM.670.0.0.8169922"
+        "Version":  "1.0.33.0-1vmw.703.0.20.19193900"
     },
     {
         "Name":  "nfnic",
-        "Version":  "5.0.0.15-1OEM.700.1.0.15843807"
+        "Version":  "4.0.0.70-1vmw.703.0.20.19193900"
     },
     {
         "Name":  "nhpsa",
@@ -185,15 +185,15 @@
     },
     {
         "Name":  "nmlx4-core",
-        "Version":  "3.19.70.1-1OEM.670.0.0.8169922"
+        "Version":  "3.19.16.8-2vmw.703.0.20.19193900"
     },
     {
         "Name":  "nmlx4-en",
-        "Version":  "3.19.70.1-1OEM.670.0.0.8169922"
+        "Version":  "3.19.16.8-2vmw.703.0.20.19193900"
     },
     {
         "Name":  "nmlx4-rdma",
-        "Version":  "3.19.70.1-1OEM.670.0.0.8169922"
+        "Version":  "3.19.16.8-2vmw.703.0.20.19193900"
     },
     {
         "Name":  "nmlx5-core",
@@ -233,27 +233,27 @@
     },
     {
         "Name":  "qcnic",
-        "Version":  "2.0.65.0-1OEM.700.1.0.15843807"
+        "Version":  "1.0.15.0-14vmw.703.0.20.19193900"
     },
     {
         "Name":  "qedentv",
-        "Version":  "3.70.7.0-1OEM.700.1.0.15843807"
+        "Version":  "3.40.57.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "qedrntv",
-        "Version":  "3.70.7.0-1OEM.700.1.0.15843807"
+        "Version":  "3.40.56.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "qfle3",
-        "Version":  "1.4.35.0-1OEM.700.1.0.15843807"
+        "Version":  "1.0.67.0-22vmw.703.0.20.19193900"
     },
     {
         "Name":  "qfle3f",
-        "Version":  "2.1.30.0-1OEM.700.1.0.15843807"
+        "Version":  "1.0.51.0-22vmw.703.0.20.19193900"
     },
     {
         "Name":  "qfle3i",
-        "Version":  "2.1.12.0-1OEM.700.1.0.15843807"
+        "Version":  "1.0.15.0-15vmw.703.0.20.19193900"
     },
     {
         "Name":  "qflge",
@@ -261,7 +261,7 @@
     },
     {
         "Name":  "qlnativefc",
-        "Version":  "5.1.68.0-1OEM.703.0.0.18644231"
+        "Version":  "4.1.57.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "rste",
@@ -273,19 +273,19 @@
     },
     {
         "Name":  "smartpqi",
-        "Version":  "70.4330.0.116-1OEM.700.1.0.15843807"
+        "Version":  "70.4149.0.5000-1vmw.703.0.20.19193900"
     },
     {
         "Name":  "tools-light",
-        "Version":  "12.1.0.20219665-20295239"
+        "Version":  "11.3.5.18557794-19482531"
     },
     {
         "Name":  "trx",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "vdfs",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "vmkata",
@@ -297,7 +297,7 @@
     },
     {
         "Name":  "vmkusb",
-        "Version":  "0.1-7vmw.703.0.50.20036589"
+        "Version":  "0.1-6vmw.703.0.20.19193900"
     },
     {
         "Name":  "vmw-ahci",
@@ -309,47 +309,39 @@
     },
     {
         "Name":  "vsan",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
     {
         "Name":  "vsanhealth",
-        "Version":  "7.0.3-0.55.20328353"
+        "Version":  "7.0.3-0.35.19482537"
     },
 
     {
-        "Name":  "dell-configuration-vib",
-        "Version":  "7.0.0-A00"
+        "Name":  "dcism",
+        "Version":  "4.1.0.0.2410-DEL.700.0.0.15843807"
     },
     {
-        "Name":  "dellemc-fac-dcui",
-        "Version":  "7.0.3-A00"
-    },
-    {
-        "Name":  "dellemc-osname-idrac",
-        "Version":  "7.0.0-A00"
-    },
-    {
-        "Name":  "dell-shared-perc8",
-        "Version":  "06.806.92.00-1OEM.700.1.0.15843807"
-    },
-    {
-        "Name":  "ixgben-ens",
-        "Version":  "1.5.5.0-1OEM.700.1.0.15843807"
-    },
-    {
-        "Name":  "nqlcnic",
-        "Version":  "6.0.63-1OEM.650.0.0.4240417"
+        "Name":  "platform-service",
+        "Version":  "7.0.370-19463571"
     },
     {
         "Name":  "qedf",
-        "Version":  "2.30.8.0-1OEM.700.1.0.15843807"
+        "Version":  "2.2.86.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "qedi",
-        "Version":  "2.30.6.0-1OEM.700.1.0.15843807"
+        "Version":  "2.19.87.0-1OEM.700.1.0.15843807"
     },
     {
         "Name":  "vmware-fdm",
-        "Version":  "7.0.3-21263533"
+        "Version":  "7.0.3-19480900"
+    },
+    {
+        "Name":  "vmware-marvin",
+        "Version":  "7.0.370-19463571"
+    },
+    {
+        "Name":  "vmware-perccli64",
+        "Version":  "007.1910.0000.0000-01"
     }
 ]

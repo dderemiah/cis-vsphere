@@ -82,9 +82,9 @@ function Ensure-VIBAcceptanceLevelIsConfiguredProperly {
         $vibs = $EsxCli.software.vib.list.invoke() | Select-Object @{Name = 'Name'; Expression = { $_.Name } }, @{Name = 'AcceptanceLevel'; Expression = { $_.AcceptanceLevel } }
         # Compare the acceptance level to the expected value
         Foreach ($vib in $vibs) {
-            if ($vib.AcceptanceLevel -ne "CommunitySupported" -and $vib.AcceptanceLevel -ne "PartnerSupported" -and $vib.AcceptanceLevel -ne "VMwareCertified") {
+            if ($vib.AcceptanceLevel -ne "CommunitySupported" -and $vib.AcceptanceLevel -ne "PartnerSupported" -and $vib.AcceptanceLevel -ne "VMwareCertified" -and $vib.AcceptanceLevel -ne "VMwareAccepted") {
                 Write-Host "- $($vib.Name): Fail" -ForegroundColor Red
-                Write-Host "  Expected acceptance level: communitySupported" -ForegroundColor Red
+                Write-Host "  Expected acceptance level: communitySupported or PartnerSupported or VMwareCertified or VMwareAccepted" -ForegroundColor Red
                 Write-Host "  Actual acceptance level: $($vib.AcceptanceLevel)" -ForegroundColor Red
                 $failed++
             }
@@ -164,7 +164,7 @@ function Ensure-UnauthorizedModulesNotLoaded {
 }
 
 
-function Ensure-DefaultSaultIsConfiguredProperly {
+function Ensure-DefaultSaltIsConfiguredProperly {
     # CIS 1.4 Ensure the default value of individual salt per vm is configured
     Write-Host "`n* CIS control 1.4 Ensure the default value of individual salt per vm is configured" -ForegroundColor Blue
     
