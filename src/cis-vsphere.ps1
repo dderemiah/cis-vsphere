@@ -1,12 +1,12 @@
 # Import scripts from controls folder
-Import-Module -Name $PSScriptRoot\controls\install.ps1 -Force
-Import-Module -Name $PSScriptRoot\controls\communication.ps1 -Force
-Import-Module -Name $PSScriptRoot\controls\vmachines.ps1 -Force
-Import-Module -Name $PSScriptRoot\controls\storage.ps1 -Force
-Import-Module -Name $PSScriptRoot\controls\logging.ps1 -Force
-Import-Module -Name $PSScriptRoot\controls\access.ps1 -Force
-Import-Module -Name $PSScriptRoot\controls\console.ps1 -Force
-Import-Module -Name $PSScriptRoot\controls\network.ps1 -Force
+Import-Module -Name $PSScriptRoot\controls\1_install.ps1 -Force
+Import-Module -Name $PSScriptRoot\controls\2_communication.ps1 -Force
+Import-Module -Name $PSScriptRoot\controls\3_logging.ps1 -Force
+Import-Module -Name $PSScriptRoot\controls\4_access.ps1 -Force
+Import-Module -Name $PSScriptRoot\controls\5_console.ps1 -Force
+Import-Module -Name $PSScriptRoot\controls\6_storage.ps1 -Force
+Import-Module -Name $PSScriptRoot\controls\7_network.ps1 -Force
+Import-Module -Name $PSScriptRoot\controls\8_vmachines.ps1 -Force
 
 # A function to connect to vCenter/ESXi Server using the Connect-VIServer cmdlet and store the connection in a variable
 function Connect-VCServer {
@@ -15,10 +15,10 @@ function Connect-VCServer {
 
     # Set InvalidCertificateAction to warn instead of stop without user interaction
     Write-Host "Setting InvalidCertificateAction to Warn instead of Stop..."
-    Set-PowerCLIConfiguration -Scope User -InvalidCertificateAction warn -Confirm:$false
+    Set-PowerCLIConfiguration -Scope User -InvalidCertificateAction Ignore -Confirm:$false
 
-    # print the connection details 
-    Write-Host "Connecting to $server" 
+    # print the connection details
+    Write-Host "Connecting to $server"
 
     # Connect to the vCenter/ESXi Server using https, stop if the connection fails
     Connect-VIServer -Server $server -Protocol https -ErrorAction Stop
@@ -37,7 +37,7 @@ Ensure-VIBAcceptanceLevelIsConfiguredProperly
 Ensure-UnauthorizedModulesNotLoaded
 #Ensure-DefaultSaltIsConfiguredProperly  #(TSS EXCLUDED)
 
-# 2.Communication 
+# 2.Communication
 Write-Host "`n* These controls contain recommendations for settings related to 2.Communication" -ForegroundColor Blue
 Ensure-NTPTimeSynchronizationIsConfiguredProperly
 Ensure-ESXiHostFirewallIsProperlyConfigured
@@ -80,13 +80,13 @@ Ensure-ShellServicesTimeoutIsProperlyConfigured
 Ensure-DCUIHasTrustedUsersForLockDownMode
 #Ensure-ContentsOfExposedConfigurationsNotModified  #(TSS EXCLUDED)
 
-# 6.Storage 
+# 6.Storage
 Write-Host "`n* These controls contain recommendations for settings related to 6.Storage" -ForegroundColor Blue
 #Ensure-BidirectionalCHAPAuthIsEnabled  #Not using iSCSI
 #Ensure-UniquenessOfCHAPAuthSecretsForiSCSI  #(TSS EXCLUDED)
 Ensure-SANResourcesAreSegregatedProperly
 
-# 7.Network 
+# 7.Network
 Write-Host "`n* These controls contain recommendations for settings related to 7.Network" -ForegroundColor Blue
 Ensure-vSwitchForgedTransmitsIsReject
 #Ensure-vSwitchMACAdressChangeIsReject  #(TSS REC BUT NO SER REQ)
